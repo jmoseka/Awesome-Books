@@ -2,8 +2,6 @@ const titleInput = document.querySelector("#titleInput");
 const authorInput = document.querySelector("#authorInput");
 const addBtn = document.querySelector("#addBtn");
 const form = document.querySelector("#form");
-var removeBtn = "";
-var titleBook = "";
 const bookContainer = document.querySelector(".book-container")
 
 
@@ -28,7 +26,6 @@ function displayBooks(){
         button.addEventListener('click', (e) => {
             const targetClass = e.target.parentElement;
             const stringTitle = targetClass.childNodes[1].textContent;
-            console.log(stringTitle)
             removeBook(stringTitle)
             e.target.parentElement.remove();
         })
