@@ -16,7 +16,7 @@ function removeBook(title) {
 function displayBooks() {
   const books = JSON.parse(window.localStorage.getItem('bookData') || '[]');
 
-  /** Loop thgrough book object and create inner html based on the data inside the 
+  /** Loop thgrough book object and create inner html based on the data inside the
    * book object
    */
   // eslint-disable-next-line no-restricted-syntax
