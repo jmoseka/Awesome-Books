@@ -1,29 +1,25 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
 # Awesome-Books
 
 > In this project, we built a basic website that allows users to add/remove books from a list. We achieved this by using JavaScript objects and arrays. We also dynamically modified the DOM and added basic events.
 
 ## Built With
 
-- **Languages:** HTML, JS
+- HTML
+- CSS
+- JS
 
 ## Live Demo
 
 [LIVE LINK](https://jmoseka.github.io/Awesome-Books/)
 
 ## Getting Started
+To get a local copy up and running follow these simple example steps.
+
+1. Clone the Repo or Download the Zip file.
+2. Run the live server or simply open index.html with your browser.
 
 ### Prerequisites
-Download node [here](https://nodejs.org/en/download/) if not already installed in your local machine
-
-### Setup
-1. Git [clone]("https://github.com/jmoseka/Portfolio-Mobile1") this repository to your local machine
-
-Issue the command ```git clone https://github.com/jmoseka/Portfolio-Mobile1``` on your terminal to download this repo
-
-2. Download as [zip](https://github.com/jmoseka/Portfolio-Mobile1/archive/refs/heads/main.zip) and extract the files to your local machine
-
+none 
 ### Install
 Copy [linter error](https://github.com/microverseinc/linters-config/tree/master/html-css-js) files for html, css and js to your root repo
 
@@ -42,23 +38,22 @@ Run tests on the .js files
 
 Run ALL tests on the pull request 
 
-### Deployment
-Files can be deployed with github pages
+👤 **yayner**
 
-## Authors 👤
+- GitHub: [@githubhandle](https://github.com/yayner2002)
+- Twitter: [@wediagazian](https://twitter.com/twitterhandle)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/yaynshet-medhin-520875127/)
 
-Jamila Moseka
+👤 **moseka**
 
-- GitHub: [jmoseka](https://github.com/jmoseka)
-- LinkedIn [jamila-moseka](https://www.linkedin.com/in/jamila-moseka/)
-
-**Co-Authors**
-- GitHub: 
-
+- GitHub: [@githubhandle](https://github.com/jmoseka)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/jamila-moseka/)
 
 ## Contributing 🤝 
 
 Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/jmoseka/Awesome-Books/issues).
 
 
 ## Show your support
@@ -67,4 +62,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
+This project is [MIT](./YAY.md) licensed.
