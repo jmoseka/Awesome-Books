@@ -53,7 +53,7 @@ Jamila Moseka
 - LinkedIn [jamila-moseka](https://www.linkedin.com/in/jamila-moseka/)
 
 **Co-Authors**
-- GitHub: [YaynCheye](https://github.com/yayner2002)
+- GitHub: 
 
 
 ## Contributing 🤝 
