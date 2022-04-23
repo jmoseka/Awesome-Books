@@ -1,3 +1,63 @@
 body {
   padding: 0;
 }
+
+.book-container{
+  border: 3px solid black;
+  width: 100%;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  
+  
+}
+
+.book-list{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.p-list{
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  font-size: 18px;
+  font-weight: bold;
+}
+.p-list p{
+  margin: 0;
+  padding: 10px;
+}
+
+.book-list:nth-child(odd){
+  background-color: #ddd;
+}
+
+form{
+  width: 250px;
+  margin-top: 120px;
+}
+input{
+  padding: 10px 0 10px 0;
+  width: 100%;
+}
+
+.add-btn-div{
+  padding: 8px 0 8px 0;
+  width: 100%;
+  text-align: end;
+}
+#addBtn{
+  padding: 5px;
+}
+
+.remove{
+  background: white;
+  width: 100px;
+  border: 2px solid black;
+}

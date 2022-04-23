@@ -27,17 +27,17 @@ class BookCL {
     for (const book of [...Object.keys(books)]) {
       const element = document.createElement('div');
       const button = document.createElement('button');
-      const horizontalLine = document.createElement('hr');
       button.innerHTML = 'Remove';
+      button.classList.add('remove');
 
       element.classList.add('book-list');
       element.innerHTML = `
-            <p class="titleBook">${books[book].title}</p>
-            <p>${books[book].author}</p>
+      <div class='p-list'>
+            <p class="titleBook">${books[book].title} by ${books[book].author}</p>
+      </div>
             `;
 
       element.appendChild(button);
-      element.append(horizontalLine);
       bookContainer.appendChild(element);
 
       /** Add function click event to the explicitly declared button */
