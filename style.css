@@ -62,3 +62,12 @@ input {
   width: 100px;
   border: 2px solid black;
 }
+
+.notice {
+  text-align: center;
+  font-size: 18px;
+}
+
+.hidden {
+  display: none;
+}

@@ -2,6 +2,7 @@ const titleInput = document.querySelector('#titleInput');
 const authorInput = document.querySelector('#authorInput');
 const addBtn = document.querySelector('#addBtn');
 const bookContainer = document.querySelector('.book-container');
+const notice = document.querySelector('.notice');
 class BookCL {
   constructor(title, author) {
     this.title = title;
@@ -33,7 +34,8 @@ class BookCL {
       element.classList.add('book-list');
       element.innerHTML = `
       <div class='p-list'>
-            <p class="titleBook">${books[book].title} by ${books[book].author}</p>
+            <p class="titleBook">${books[book].title}</p>
+            <p>by ${books[book].author}</p>
       </div>
             `;
 
@@ -44,7 +46,7 @@ class BookCL {
       // eslint-disable-next-line no-loop-func
       button.addEventListener('click', (e) => {
         const targetClass = e.target.parentElement;
-        const stringTitle = targetClass.childNodes[1].textContent;
+        const stringTitle = targetClass.childNodes[1].childNodes[1].textContent;
         this.removeBook(stringTitle);
         e.target.parentElement.remove();
       });
@@ -77,10 +79,25 @@ bookCl.displayBooks();
 
 // click event for the add button
 addBtn.addEventListener('click', () => {
-  const addBookCl = new BookCL(titleInput.value, authorInput.value);
-  bookCl.addBooks(titleInput.value, authorInput.value);
-  bookContainer.innerHTML = '';
-  addBookCl.displayBooks();
-  titleInput.value = '';
-  authorInput.value = '';
+  if (titleInput === '' || authorInput.value === '') {
+    notice.classList.remove('hidden');
+  } else {
+    const addBookCl = new BookCL(titleInput.value, authorInput.value);
+    bookCl.addBooks(titleInput.value, authorInput.value);
+    bookContainer.innerHTML = '';
+    addBookCl.displayBooks();
+    titleInput.value = '';
+    authorInput.value = '';
+  }
 });
+
+// remove error message upon clicking anywhere
+document.onclick = (e) => {
+  /** Close modal window if pressed anywhere */
+  if (
+    e.target.id === 'titleInput'
+    || e.target.id === 'authorInput'
+  ) {
+    notice.classList.add('hidden');
+  }
+};
