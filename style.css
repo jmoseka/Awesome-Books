@@ -2,61 +2,62 @@ body {
   padding: 0;
 }
 
-.book-container{
+.book-container {
   border: 3px solid black;
   width: 100%;
 }
 
-main{
+main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  
-  
 }
 
-.book-list{
+.book-list {
   display: flex;
   width: 100%;
   justify-content: space-between;
 }
 
-.p-list{
+.p-list {
   display: flex;
   flex-direction: row;
   width: 50%;
   font-size: 18px;
   font-weight: bold;
 }
-.p-list p{
+
+.p-list p {
   margin: 0;
   padding: 10px;
 }
 
-.book-list:nth-child(odd){
+.book-list:nth-child(odd) {
   background-color: #ddd;
 }
 
-form{
+form {
   width: 250px;
   margin-top: 120px;
 }
-input{
+
+input {
   padding: 10px 0 10px 0;
   width: 100%;
 }
 
-.add-btn-div{
+.add-btn-div {
   padding: 8px 0 8px 0;
   width: 100%;
   text-align: end;
 }
-#addBtn{
+
+#addBtn {
   padding: 5px;
 }
 
-.remove{
+.remove {
   background: white;
   width: 100px;
   border: 2px solid black;
