@@ -15,33 +15,34 @@ class BookCL {
     this.author = author;
   }
 
+  static books = [];
+
   /** Function to remove book when remove button is clicked */
   // eslint-disable-next-line class-methods-use-this
   removeBook(title) {
-    const books = JSON.parse(window.localStorage.getItem('bookData'));
-    const removebk = books.filter((book) => book.title !== title);
+    this.books = JSON.parse(window.localStorage.getItem('bookData'));
+    const removebk = this.books.filter((book) => book.title !== title);
     window.localStorage.setItem('bookData', JSON.stringify(removebk));
   }
 
   // eslint-disable-next-line class-methods-use-this
   displayBooks() {
-    const books = JSON.parse(window.localStorage.getItem('bookData') || '[]');
+    this.books = JSON.parse(window.localStorage.getItem('bookData') || '[]');
 
     /** Loop thgrough book object and create inner html based on the data inside the
    * book object
    */
     // eslint-disable-next-line no-restricted-syntax
-    for (const book of [...Object.keys(books)]) {
+    for (const book of [...Object.keys(this.books)]) {
       const element = document.createElement('div');
       const button = document.createElement('button');
       button.innerHTML = 'Remove';
       button.classList.add('remove');
-
       element.classList.add('book-list');
       element.innerHTML = `
       <div class='p-list'>
-            <p class="titleBook">${books[book].title}</p>
-            <p>by ${books[book].author}</p>
+            <p class="titleBook">${this.books[book].title}</p>
+            <p>by ${this.books[book].author}</p>
       </div>
             `;
 
