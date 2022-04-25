@@ -46,13 +46,23 @@ a {
   color: blue;
 }
 
+.line {
+  border-right: 3px solid black;
+  margin-right: 20px;
+}
+
+.time {
+  align-self: flex-end;
+  font-weight: bold;
+}
+
 .active {
   color: blue;
 }
 
 .list-book-container {
   width: 100%;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .book-container {
@@ -87,7 +97,7 @@ a {
 }
 
 .container-form {
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 form {
@@ -121,7 +131,8 @@ input {
 }
 
 .contact-info {
-  margin-top: 100px;
+  margin-top: 80px;
+  font-weight: bold;
 }
 
 .copyright {
