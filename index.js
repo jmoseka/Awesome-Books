@@ -15,11 +15,15 @@ const today = DateTime.local();
 const now = today.toLocaleString(DateTime.DATETIME_FULL_WITH_SECONDS);
 time.textContent = now;
 
+// populate data on the screen
 const bookClass = new BookClass('', '');
 displayBook(bookClass);
+
+// functions for nav links when clicked
 Menu.displayAdd;
 Menu.displayContact;
 Menu.displayList;
+
 // click event for the add button
 addBtn.addEventListener('click', () => {
   if (titleInput === '' || authorInput.value === '') {
@@ -27,19 +31,16 @@ addBtn.addEventListener('click', () => {
   } else {
     bookClass.title = titleInput.value;
     bookClass.author = authorInput.value;
-    // const addBookCl = new BookCL(titleInput.value, authorInput.value);
     addBooks(bookClass);
     bookContainer.innerHTML = '';
     displayBook(bookClass);
-    // bookCl.displayBooks();
     titleInput.value = '';
     authorInput.value = '';
   }
 });
 
-// remove error message upon clicking anywhere
+// remove error message upon clicking on the form text field
 document.onclick = (e) => {
-  /** Close modal window if pressed anywhere */
   if (
     e.target.id === 'titleInput'
     || e.target.id === 'authorInput'
