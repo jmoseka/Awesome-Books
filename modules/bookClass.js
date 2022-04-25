@@ -14,7 +14,7 @@ export default class BookCL {
 }
 
 // eslint-disable-next-line class-methods-use-this
-export function displayBook(booksCl) {
+export const displayBook = (booksCl) => {
   booksCl.books = JSON.parse(window.localStorage.getItem('bookData') || '[]');
 
   /** Loop thgrough book object and create inner html based on the data inside the
@@ -47,12 +47,12 @@ export function displayBook(booksCl) {
       e.target.parentElement.remove();
     });
   }
-}
+};
 
-export function addBooks(booksCl) {
+export const addBooks = (booksCl) => {
   const books = JSON.parse(window.localStorage.getItem('bookData') || '[]');
   books.push(booksCl);
 
   /** Store the updated object data in local storage */
   window.localStorage.setItem('bookData', JSON.stringify(books));
-}
+};

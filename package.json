@@ -8,5 +8,26 @@
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
     "stylelint-scss": "^3.21.0"
-  }
+  },
+  "dependencies": {
+    "luxon": "^2.3.2"
+  },
+  "name": "awesome-books",
+  "description": "> In this project, we built a basic website that allows users to add/remove books from a list. We achieved this by using JavaScript objects and arrays. We also dynamically modified the DOM and added basic events.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmoseka/Awesome-Books.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmoseka/Awesome-Books/issues"
+  },
+  "homepage": "https://github.com/jmoseka/Awesome-Books#readme"
 }

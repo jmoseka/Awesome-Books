@@ -46,6 +46,16 @@ a {
   color: blue;
 }
 
+.line{
+  border-right: 3px solid black;
+  margin-right: 20px;
+}
+
+.time{
+  align-self: flex-end;
+  font-weight: bold;
+}
+
 .active {
   color: blue;
 }
@@ -122,6 +132,7 @@ input {
 
 .contact-info {
   margin-top: 100px;
+  font-weight: bold;
 }
 
 .copyright {
