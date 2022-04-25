@@ -15,7 +15,7 @@ class BookCL {
     this.author = author;
   }
 
-  static books = [];
+  books = [];
 
   /** Function to remove book when remove button is clicked */
   // eslint-disable-next-line class-methods-use-this
