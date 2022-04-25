@@ -4,23 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body>
+<body class="flex-center">
+    <div class="container flex-center">
+        <nav>
+            <a href="logo-link"><h1>Awesome Books</h1></a>
+            <div class="nav-link">
+                <a class="list-link active" href="#">List</a>
+                <a class="add-link" href="#">Add new</a>
+                <a class="contact-link" href="#">Contact</a>
+            </div>
+        </nav>
 
-    <h1>Awesome Books</h1>
-    <div class="book-container">
+        <main>
+            <!--List of awesome books-->
+            <div class="list-book-container">
+                <h2 class="text-center">All awesome books</h2>
+                <div class="book-container">
+                </div>
+    
+            </div>
+            <!--Form input-->
+            <div class="container-form flex-center hidden">
+                <h2 class="text-center">Add a new book</h2>
+                <form id="form">
+                    <input type="text" placeholder="Title" id="titleInput">
+                    <input type="text" placeholder="Author" id="authorInput">
+                    <br> <br>
+                    <div class="add-btn-div">
+                        <button type="button" id="addBtn">Add</button>
+                    </div>
+                    <p class="notice hidden">⛔ Fields cannot be empty</p>
+                </form>
 
+            </div>
+
+            <!--Contact info-->
+            <div class="contact-info hidden">
+                <h2 class="text-center">Contact information</h2>
+                <p>Do have any questions or just want to say "Hello"? You can reach out to us!</p>
+                <ul>
+                    <li>Our e-mail: mail@mail.com</li>
+                    <li>Our phone number: 0043586534422</li>
+                    <li>Our address: Streetname 22 84503 City, Country</li>
+                </ul>
+            </div>
+            
+        
+            <script src="index.js"></script>
+
+    <footer class="copyright">
+        <p>Copyright   ...</p>
+    </footer>
+
+
+        </main>
+        
     </div>
-
-    <form id="form">
-        <input type="text" placeholder="Title" id="titleInput">
-         <br><br>
-        <input type="text" placeholder="Author" id="authorInput">
-        <br> <br>
-        <button type="button" id="addBtn">Add</button>
-    </form>
-
-    <script src="index.js"></script>
+    
 </body>
 </html>
