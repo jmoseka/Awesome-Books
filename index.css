@@ -46,12 +46,12 @@ a {
   color: blue;
 }
 
-.line{
+.line {
   border-right: 3px solid black;
   margin-right: 20px;
 }
 
-.time{
+.time {
   align-self: flex-end;
   font-weight: bold;
 }
