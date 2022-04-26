@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-expressions */
-import BookClass, { displayBook, addBooks } from './modules/bookClass.js';
+import BookClass, { displayBook } from './modules/bookClass.js';
+import addBooks from './modules/addBooks.js';
 import * as Menu from './modules/menu.js';
 import { DateTime } from './modules/luxon.js';
 

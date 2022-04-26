@@ -6,11 +6,11 @@ export default class BookCL {
 
     books = JSON.parse(window.localStorage.getItem('bookData') || '[]');
 
-    removeBook(title) {
+  /** removeBook(title) {
       this.books = JSON.parse(window.localStorage.getItem('bookData'));
       const removebk = this.books.filter((book) => book.title !== title);
       window.localStorage.setItem('bookData', JSON.stringify(removebk));
-    }
+    } */
 }
 
 // eslint-disable-next-line class-methods-use-this
@@ -43,7 +43,7 @@ export const displayBook = (booksCl) => {
     button.addEventListener('click', (e) => {
       const targetClass = e.target.parentElement;
       const stringTitle = targetClass.childNodes[1].childNodes[1].textContent;
-      booksCl.removeBook(stringTitle);
+      booksCl.removeBook(stringTitle, booksCl);
       e.target.parentElement.remove();
     });
   }
@@ -55,4 +55,10 @@ export const addBooks = (booksCl) => {
 
   /** Store the updated object data in local storage */
   window.localStorage.setItem('bookData', JSON.stringify(books));
+};
+
+export const removeBook = (title, booksCl) => {
+  booksCl.books = JSON.parse(window.localStorage.getItem('bookData'));
+  const removebk = booksCl.books.filter((book) => book.title !== title);
+  window.localStorage.setItem('bookData', JSON.stringify(removebk));
 };
