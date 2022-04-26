@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-expressions */
-import BookClass, { displayBook, addBooks } from './modules/bookClass.js';
+import BookClass, { displayBook } from './modules/bookClass.js';
+import addBooks from './modules/addBook.js';
 import * as Menu from './modules/menu.js';
 import { DateTime } from './modules/luxon.js';
 
@@ -31,7 +32,7 @@ addBtn.addEventListener('click', () => {
   } else {
     bookClass.title = titleInput.value;
     bookClass.author = authorInput.value;
-    addBooks(bookClass);
+    addBooks(bookClass, bookClass);
     bookContainer.innerHTML = '';
     displayBook(bookClass);
     titleInput.value = '';
